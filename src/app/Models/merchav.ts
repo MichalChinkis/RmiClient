@@ -1,6 +1,6 @@
-import { Atar } from "./atar.model";
+import { Atar } from "./atar";
 
-export class MerchavDTO {
+export class Merchav {
     kodMerchav!: number;
     shemMerchav!: string;
     typeMerchav!: number;

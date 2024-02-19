@@ -1,4 +1,4 @@
-export class YechidaIrgunitDTO {
+export class YechidaIrgunit {
     kodYechidaIrgunit!: number;
     kodSugYechidaIrgunit!: number;
     shemYechidaIrgunit!: string;

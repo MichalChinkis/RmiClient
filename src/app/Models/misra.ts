@@ -1,5 +1,4 @@
-import { User } from "./user.model";
-
+import {User} from '../Models/user'
 export class Misra {
     misraId!: number;
     misMisra!: number;

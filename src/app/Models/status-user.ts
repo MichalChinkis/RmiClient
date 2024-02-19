@@ -1,4 +1,4 @@
-import { User } from "./user.model";
+import { User } from "./user";
 
 export class StatusUser {
     id!: number;

@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { UserDetailsDTO } from '../Models/user_details_DTO.model';
 import { Observable } from 'rxjs';
-import { User } from '../Models/user.model';
-import { UserDTO } from '../Models/user_DTO.model';
+import { UserDetails } from '../Models/user-details';
+import { User } from '../Models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -12,9 +11,9 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) { }
 
-  GetUserDetails(userId:number): Observable<UserDetailsDTO> {
+  GetUserDetails(userId:number): Observable<UserDetails> {
     let url = 'https://localhost:7056/api/User/userDetails/'+userId;
-    return this.httpClient.get<UserDetailsDTO>(url)
+    return this.httpClient.get<UserDetails>(url)
   }
 
   IsUserExist(userId:number): Observable<boolean> {
@@ -22,13 +21,13 @@ export class UserService {
     return this.httpClient.get<boolean>(url)
   }
 
-  GetActiveUsers(): Observable<UserDTO[]> {
+  GetActiveUsers(): Observable<User[]> {
     let url = 'https://localhost:7056/api/User/GetActiveUsers';
-    return this.httpClient.get<UserDTO[]>(url)
+    return this.httpClient.get<User[]>(url)
   }
 
-  GetNoActiveUsers(): Observable<UserDTO[]> {
+  GetNoActiveUsers(): Observable<User[]> {
     let url = 'https://localhost:7056/api/User/GetNoActiveUsers';
-    return this.httpClient.get<UserDTO[]>(url)
+    return this.httpClient.get<User[]>(url)
   }
 }

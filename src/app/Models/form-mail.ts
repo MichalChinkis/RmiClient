@@ -1,6 +1,6 @@
 import { FormsType } from "./forms_type.model";
 
-export class FormMailDTO {
+export class FormMail {
     id!: number;
     formTypeId!: number;
     isBcc!: boolean;

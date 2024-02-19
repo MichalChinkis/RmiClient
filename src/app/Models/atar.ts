@@ -1,4 +1,4 @@
-export class AtarDTO {
+export class Atar {
   kodAtar!: number;
   tirgumAtar!: string;
   atarLetter!: string;

@@ -1,6 +1,6 @@
-import { Misra } from "./misra.model";
+import { Misra } from "./misra";
 
-export class UserDTO {
+export class User {
   userId!: number;
   misOved!: number;
   machozMotza!: number;
