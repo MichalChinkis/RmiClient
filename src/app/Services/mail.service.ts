@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormMailDTO } from '../Models/formMailDTO.model';
+import { FormMailDTO } from '../Models/form_mail_DTO.model';
 import { Observable } from 'rxjs';
 
 @Injectable({

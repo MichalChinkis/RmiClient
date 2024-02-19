@@ -1,5 +1,5 @@
 import { Misra } from "./misra.model";
-import { StatusUser } from "./statusUser.model";
+import { StatusUser } from "./status_user.model";
 
 export class User {
     usrUserId!: number;

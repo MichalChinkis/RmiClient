@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Tafkid } from '../Models/Tafkid.model';
+import { Tafkid } from '../Models/tafkid.model';
 import { Observable } from 'rxjs';
 
 @Injectable({

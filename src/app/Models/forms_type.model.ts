@@ -1,4 +1,4 @@
-import { FormsMail } from "./formsMail.model";
+import { FormsMail } from "./forms_mail.model";
 
 export class FormsType {
     id!: number;
