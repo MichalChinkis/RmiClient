@@ -3,4 +3,4 @@ export class Tafkid{
     tfkShemTafkid!: string;
     tfkStatusTafkid!: number;
     tfkKodTafkidIdSap!: number;
-}
+} 
